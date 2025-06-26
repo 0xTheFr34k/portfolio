@@ -1,0 +1,192 @@
+/* Contact Section Styles */
+.contact {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.contact-intro {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+}
+
+.contact-intro p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #64748b;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-info h3 {
+  font-size: 1.5rem;
+  color: #1e293b;
+  margin-bottom: 2rem;
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.contact-method {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.contact-method:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.method-icon {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+}
+
+.method-content {
+  flex: 1;
+}
+
+.method-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.25rem;
+}
+
+.method-description {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-bottom: 0.5rem;
+}
+
+.method-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.method-link:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+.method-value {
+  color: #1e293b;
+  font-weight: 500;
+}
+
+.availability {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
+}
+
+.availability h4 {
+  font-size: 1.1rem;
+  color: #1e293b;
+  margin-bottom: 0.75rem;
+}
+
+.availability p {
+  color: #64748b;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #16a34a;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.status-dot.available {
+  background: #16a34a;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .contact-content {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-intro {
+    margin-bottom: 2rem;
+  }
+  
+  .contact-intro p {
+    font-size: 1rem;
+  }
+  
+  .contact-content {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+  
+  .contact-method {
+    padding: 1rem;
+  }
+  
+  .method-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .availability {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-method {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .method-content {
+    text-align: center;
+  }
+}

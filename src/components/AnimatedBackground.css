@@ -1,0 +1,323 @@
+.animated-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Grid overlay for tech feel */
+.grid-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(37, 99, 235, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 99, 235, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: gridMove 20s linear infinite;
+}
+
+@keyframes gridMove {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(50px, 50px); }
+}
+
+/* Gradient orbs for depth */
+.gradient-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(40px);
+  animation: float 15s ease-in-out infinite;
+}
+
+.orb-1 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.3) 0%, transparent 70%);
+  top: 10%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.orb-2 {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.2) 0%, transparent 70%);
+  top: 60%;
+  right: 15%;
+  animation-delay: 5s;
+}
+
+.orb-3 {
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(34, 197, 94, 0.2) 0%, transparent 70%);
+  bottom: 20%;
+  left: 20%;
+  animation-delay: 10s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) translateX(0px) scale(1); }
+  25% { transform: translateY(-20px) translateX(10px) scale(1.1); }
+  50% { transform: translateY(0px) translateX(20px) scale(1); }
+  75% { transform: translateY(20px) translateX(10px) scale(0.9); }
+}
+
+/* Floating code blocks */
+.floating-code {
+  position: absolute;
+  bottom: -50px;
+  background: rgba(30, 41, 59, 0.9);
+  color: #64ffda;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  white-space: nowrap;
+  border: 1px solid rgba(37, 99, 235, 0.3);
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.2);
+  animation: floatUp 15s linear infinite;
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) perspective(1000px) rotateX(0deg) rotateY(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) perspective(1000px) rotateX(360deg) rotateY(180deg);
+    opacity: 0;
+  }
+}
+
+/* Geometric shapes */
+.geometric-shape {
+  position: absolute;
+  bottom: -100px;
+  animation: shapeFloat 20s linear infinite;
+}
+
+.geometric-shape.cube {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(45deg, rgba(37, 99, 235, 0.6), rgba(29, 78, 216, 0.8));
+  border: 2px solid rgba(37, 99, 235, 0.8);
+  transform-style: preserve-3d;
+  animation: shapeFloat 20s linear infinite, rotateCube 8s linear infinite;
+}
+
+.geometric-shape.pyramid {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 40px solid rgba(168, 85, 247, 0.7);
+  animation: shapeFloat 20s linear infinite, rotatePyramid 6s linear infinite;
+}
+
+.geometric-shape.sphere {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, rgba(34, 197, 94, 0.8), rgba(22, 163, 74, 0.6));
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.4);
+  animation: shapeFloat 20s linear infinite, pulseSphere 4s ease-in-out infinite;
+}
+
+.geometric-shape.hexagon {
+  width: 40px;
+  height: 35px;
+  background: rgba(245, 158, 11, 0.7);
+  position: relative;
+  margin: 17.5px 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 12px solid rgba(245, 158, 11, 0.7);
+  transform: rotate(180deg);
+  animation: shapeFloat 20s linear infinite, rotateHexagon 5s linear infinite;
+}
+
+@keyframes shapeFloat {
+  0% {
+    transform: translateY(0) translateX(0) scale(0.5);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120vh) translateX(50px) scale(0.3);
+    opacity: 0;
+  }
+}
+
+@keyframes rotateCube {
+  0% { transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  100% { transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); }
+}
+
+@keyframes rotatePyramid {
+  0% { transform: rotateY(0deg) rotateZ(0deg); }
+  100% { transform: rotateY(360deg) rotateZ(180deg); }
+}
+
+@keyframes pulseSphere {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 20px rgba(34, 197, 94, 0.4); }
+  50% { transform: scale(1.2); box-shadow: 0 0 30px rgba(34, 197, 94, 0.8); }
+}
+
+@keyframes rotateHexagon {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Binary particles */
+.binary-particle {
+  position: absolute;
+  bottom: -20px;
+  color: rgba(37, 99, 235, 0.6);
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  animation: binaryFloat 10s linear infinite;
+  text-shadow: 0 0 10px rgba(37, 99, 235, 0.5);
+}
+
+@keyframes binaryFloat {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+/* Circuit lines */
+.circuit-line {
+  position: absolute;
+  bottom: -5px;
+  height: 2px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(37, 99, 235, 0.8) 20%, 
+    rgba(37, 99, 235, 1) 50%, 
+    rgba(37, 99, 235, 0.8) 80%, 
+    transparent 100%);
+  animation: circuitMove 12s linear infinite;
+  box-shadow: 0 0 10px rgba(37, 99, 235, 0.5);
+}
+
+@keyframes circuitMove {
+  0% {
+    transform: translateY(0) scaleX(0);
+    opacity: 0;
+  }
+  10% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) scaleX(0.5);
+    opacity: 0;
+  }
+}
+
+/* Tech icons */
+.tech-icon {
+  position: absolute;
+  font-size: 2rem;
+  color: rgba(37, 99, 235, 0.3);
+  font-weight: bold;
+  animation: techPulse 4s ease-in-out infinite;
+}
+
+.icon-1 {
+  top: 15%;
+  left: 15%;
+  animation-delay: 0s;
+}
+
+.icon-2 {
+  top: 25%;
+  right: 20%;
+  animation-delay: 1s;
+}
+
+.icon-3 {
+  bottom: 30%;
+  left: 25%;
+  animation-delay: 2s;
+}
+
+.icon-4 {
+  top: 60%;
+  right: 30%;
+  animation-delay: 3s;
+}
+
+.icon-5 {
+  bottom: 20%;
+  right: 15%;
+  animation-delay: 4s;
+}
+
+@keyframes techPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.3;
+    text-shadow: 0 0 10px rgba(37, 99, 235, 0.3);
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+    text-shadow: 0 0 20px rgba(37, 99, 235, 0.6);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .floating-code {
+    font-size: 10px;
+    padding: 6px 8px;
+  }
+  
+  .geometric-shape {
+    transform: scale(0.7);
+  }
+  
+  .tech-icon {
+    font-size: 1.5rem;
+  }
+  
+  .gradient-orb {
+    transform: scale(0.7);
+  }
+}
