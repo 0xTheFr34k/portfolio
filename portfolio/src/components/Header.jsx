@@ -12,9 +12,20 @@ const Header = () => {
       setIsScrolled(window.scrollY > 50);
     };
 
+    const handleClickOutside = (event) => {
+      if (isMobileMenuOpen && !event.target.closest('.header')) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+    document.addEventListener('click', handleClickOutside);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [isMobileMenuOpen]);
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -30,7 +41,6 @@ const Header = () => {
     { id: 'skills', label: '.Skills()' },
     { id: 'projects', label: '.Projects()' },
     { id: 'education', label: '.Education()' },
-    { id: 'testimonials', label: '.Testimonials()' },
     { id: 'contact', label: '.Contact()' }
   ];
 

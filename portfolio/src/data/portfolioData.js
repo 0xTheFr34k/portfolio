@@ -112,13 +112,13 @@ export const portfolioData = {
   // Skills organized by category
   skills: {
     programmingLanguages: [
-      { name: "Python", level: "Advanced", years: 4 },
+      { name: "Python", level: "Advanced", years: 6 },
       { name: "Go", level: "Intermediate", years: 2 },
-      { name: "C/C++", level: "Intermediate", years: 3 },
+      { name: "C/C++", level: "Advanced", years: 6 },
       { name: "PHP", level: "Intermediate", years: 2 },
-      { name: "JavaScript", level: "Advanced", years: 4 },
-      { name: "TypeScript", level: "Advanced", years: 3 },
-      { name: "Bash", level: "Intermediate", years: 3 }
+      { name: "JavaScript", level: "Advanced", years: 7 },
+      { name: "TypeScript", level: "Advanced", years: 5 },
+      { name: "Bash", level: "Advanced", years: 7 }
     ],
     backendDevelopment: [
       { name: "REST APIs", level: "Advanced" },
