@@ -129,13 +129,13 @@ export const portfolioData = {
   // Skills organized by category
   skills: {
     programmingLanguages: [
-      { name: "Python", level: "Advanced", years: 6 },
-      { name: "Go", level: "Advanced", years: 4 },
-      { name: "C/C++", level: "Advanced", years: 6 },
-      { name: "PHP", level: "Intermediate", years: 2 },
-      { name: "JavaScript", level: "Advanced", years: 7 },
-      { name: "TypeScript", level: "Advanced", years: 5 },
-      { name: "Bash", level: "Advanced", years: 7 }
+      { name: "Python", level: "Advanced" },
+      { name: "Go", level: "Advanced"},
+      { name: "C/C++", level: "Advanced"},
+      { name: "PHP", level: "Intermediate" },
+      { name: "JavaScript", level: "Advanced"},
+      { name: "TypeScript", level: "Advanced"},
+      { name: "Bash", level: "Advanced" }
     ],
     backendDevelopment: [
       { name: "REST APIs", level: "Advanced" },
@@ -150,11 +150,14 @@ export const portfolioData = {
       { name: "Ansible", level: "Intermediate" },
       { name: "GitOps (FluxCD)", level: "Advanced" },
       { name: "CI/CD", level: "Advanced" },
-      { name: "AWS", level: "Advanced" }
+      { name: "AWS", level: "Advanced" },
+      { name: "Azure", level: "Intermediate" },
+      { name: "Google Cloud", level: "Intermediate" }
     ],
     dataProcessing: [
       { name: "Apache Airflow", level: "Advanced" },
-      { name: "RabbitMQ", level: "Advanced" }
+      { name: "RabbitMQ", level: "Advanced" },
+      { name: "Apache Kafka", level: "Advanced" }
     ],
     monitoringSecurity: [
       { name: "ELK Stack", level: "Advanced" },

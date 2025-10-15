@@ -92,24 +92,33 @@ const Skills = () => {
     if (name.includes('python')) return 'python';
     if (name.includes('javascript')) return 'javascript';
     if (name.includes('typescript')) return 'typescript';
+    if (name.includes('google cloud') || name.includes('gcp')) return 'googlecloud';
     if (name.includes('go')) return 'go';
     if (name.includes('c++') || name.includes('cpp')) return 'cpp';
     if (name.includes('c/c++')) return 'c';
     if (name.includes('php')) return 'php';
     if (name.includes('bash')) return 'bash';
     if (name.includes('aws')) return 'aws';
+    if (name.includes('azure')) return 'azure';
     if (name.includes('docker')) return 'docker';
     if (name.includes('kubernetes')) return 'kubernetes';
+    if (name.includes('terraform')) return 'terraform';
+    if (name.includes('ansible')) return 'ansible';
+    if (name.includes('proxmox')) return 'proxmox';
+    if (name.includes('fluxcd') || name.includes('gitops')) return 'fluxcd';
+    if (name.includes('ci/cd')) return 'cicd';
+    if (name.includes('airflow')) return 'airflow';
+    if (name.includes('rabbitmq')) return 'rabbitmq';
+    if (name.includes('kafka')) return 'kafka';
+    if (name.includes('suricata')) return 'suricata';
     if (name.includes('mongodb')) return 'mongodb';
     if (name.includes('node')) return 'nodejs';
     if (name.includes('rest') || name.includes('api')) return 'api';
     if (name.includes('microservices')) return 'microservices';
     if (name.includes('distributed')) return 'server';
-    if (name.includes('airflow')) return 'code';
-    if (name.includes('rabbitmq')) return 'server';
     if (name.includes('elk')) return 'elasticsearch';
     if (name.includes('prometheus')) return 'prometheus';
-    if (name.includes('ids') || name.includes('siem') || name.includes('suricata')) return 'security';
+    if (name.includes('ids') || name.includes('siem')) return 'security';
     return 'code'; // default icon
   };
 

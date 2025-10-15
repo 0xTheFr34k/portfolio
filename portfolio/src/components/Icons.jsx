@@ -15,10 +15,21 @@ const Icon = ({ name, size = 24, className = "" }) => {
     'sql': 'https://img.icons8.com/color/48/sql.png',
 
     // Cloud & DevOps
-    'aws': 'https://img.icons8.com/color/48/amazon-web-services.png',
-    'docker': 'https://img.icons8.com/color/48/docker.png',
-    'kubernetes': 'https://img.icons8.com/color/48/kubernetes.png',
-    'linux': 'https://img.icons8.com/color/48/linux--v1.png',
+    'aws': 'https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg',
+    'azure': 'https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg',
+    'googlecloud': 'https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg',
+    'docker': 'https://www.vectorlogo.zone/logos/docker/docker-icon.svg',
+    'kubernetes': 'https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg',
+    'linux': 'https://techicons.dev/icons/linux',
+    'terraform': 'https://www.vectorlogo.zone/logos/terraformio/terraformio-icon.svg',
+    'ansible': 'https://www.vectorlogo.zone/logos/ansible/ansible-icon.svg',
+    'proxmox': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/proxmox/proxmox-original-wordmark.svg',
+    'fluxcd': 'https://www.vectorlogo.zone/logos/fluxcdio/fluxcdio-icon.svg',
+    'cicd': 'https://img.icons8.com/color/48/workflow.png',
+    'airflow': 'https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/apache-airflow.svg',
+    'rabbitmq': 'https://www.vectorlogo.zone/logos/rabbitmq/rabbitmq-icon.svg',
+    'kafka': 'https://www.vectorlogo.zone/logos/apache_kafka/apache_kafka-icon.svg',
+    'suricata': 'https://img.icons8.com/color/48/security-checked.png',
 
     // Databases
     'mongodb': 'https://img.icons8.com/color/48/mongodb.png',
