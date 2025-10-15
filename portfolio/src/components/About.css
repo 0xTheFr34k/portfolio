@@ -291,6 +291,27 @@
 }
 
 @media (max-width: 768px) {
+  .about {
+    padding: 2rem 1rem;
+  }
+
+  .about-content {
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .about-description {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .about-description p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
   .about-stats {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -325,24 +346,100 @@
   }
 
   .highlights-title {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .highlights-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1rem;
   }
 
   .highlight-card {
-    padding: 1.5rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .highlight-title {
+    font-size: 1.1rem;
+  }
+
+  .highlight-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
   }
 }
 
 @media (max-width: 480px) {
+  .about {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .about-content {
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-description {
+    padding: 0 0.5rem;
+  }
+
+  .about-description p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
   .about-stats {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .stat-item {
+    padding: 1rem;
+  }
+
+  .stat-number {
+    font-size: 1.75rem;
+  }
+
+  .stat-label {
+    font-size: 0.85rem;
+  }
+
+  .highlights-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
   }
   
   .highlights-grid {
+    grid-template-columns: 1fr;
     gap: 1rem;
+    padding: 0 0.5rem;
   }
   
   .highlight-card {
-    padding: 1rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .highlight-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+  }
+
+  .highlight-title {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .highlight-description {
+    font-size: 0.85rem;
+    line-height: 1.5;
   }
 }

@@ -118,9 +118,6 @@ const Footer = () => {
             <p>
               © {currentYear} {portfolioData.personal.name}. All rights reserved.
             </p>
-            <p className="footer-note">
-              Built with React & Vite. Designed with ❤️ for modern web experiences.
-            </p>
           </div>
         </div>
       </div>
