@@ -34,18 +34,30 @@
 
 .about-content {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: 1fr;
   gap: 4rem;
   margin-bottom: 4rem;
   align-items: start;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-text {
+  text-align: center;
+}
+
+.about-description {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .about-description p {
   margin-bottom: 1.5rem;
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #64748b;
-  text-align: justify;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: #475569;
+  text-align: left;
 }
 
 .about-stats {
@@ -130,28 +142,34 @@
 }
 
 .highlights-title {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #1e293b;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   text-align: center;
   font-weight: 600;
 }
 
 .highlights-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .highlight-card {
-  padding: 2rem;
+  padding: 2.5rem;
   background: white;
-  border: 1px solid #e2e8f0;
-  border-radius: 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 1.25rem;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .highlight-card::before {
@@ -159,44 +177,52 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 4px;
-  height: 100%;
-  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
-  transform: scaleY(0);
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #2563eb 0%, #8b5cf6 50%, #1d4ed8 100%);
+  transform: scaleX(0);
   transition: transform 0.3s ease;
 }
 
 .highlight-card:hover::before {
-  transform: scaleY(1);
+  transform: scaleX(1);
 }
 
 .highlight-card:hover {
-  transform: translateX(8px);
-  box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.1);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 35px -5px rgba(37, 99, 235, 0.2);
+  border-color: #3b82f6;
 }
 
 .highlight-icon {
-  width: 48px;
-  height: 48px;
-  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
-  border-radius: 12px;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.highlight-card:hover .highlight-icon {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
 }
 
 .highlight-title {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   font-weight: 600;
   color: #1e293b;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .highlight-description {
   color: #64748b;
-  line-height: 1.6;
+  line-height: 1.7;
   font-size: 0.95rem;
 }
 

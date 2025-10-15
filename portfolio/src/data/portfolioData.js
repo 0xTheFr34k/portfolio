@@ -15,7 +15,7 @@ export const portfolioData = {
   },
 
   // Professional Summary
-  summary: `DevOps & Cloud Engineer with expertise in infrastructure automation, container orchestration, and CI/CD. Strong background in backend engineering, distributed systems, and observability. Experienced in deploying Kubernetes, Docker, Terraform, and GitOps pipelines for production-grade environments. Passionate about scalability, reliability, and security-first architectures.`,
+  summary: `A Software & Cloud Engineer with proven experience designing and building scalable distributed applications and the robust infrastructure to run them. My expertise lies at the intersection of development (Python, Go, Microservices) and cloud operations. I specialize in the full lifecycle, from backend engineering and API optimization to deploying resilient, automated systems using Kubernetes, Docker, Terraform, and CI/CD pipelines on platforms like AWS. Focused on driving efficiency, reliability, and security from code to production.`,
 
   // Work Experience
   experience: [
@@ -130,7 +130,7 @@ export const portfolioData = {
   skills: {
     programmingLanguages: [
       { name: "Python", level: "Advanced", years: 6 },
-      { name: "Go", level: "Intermediate", years: 2 },
+      { name: "Go", level: "Advanced", years: 4 },
       { name: "C/C++", level: "Advanced", years: 6 },
       { name: "PHP", level: "Intermediate", years: 2 },
       { name: "JavaScript", level: "Advanced", years: 7 },

@@ -4,13 +4,6 @@ import Icon from './Icons';
 import './About.css';
 
 const About = () => {
-  const stats = [
-    { number: '4+', label: 'Years Experience' },
-    { number: '10+', label: 'Projects Completed' },
-    { number: '3', label: 'Companies Worked' },
-    { number: '7+', label: 'Technologies Mastered' }
-  ];
-
   const highlights = [
     {
       icon: (
@@ -36,9 +29,17 @@ const About = () => {
     {
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-          <line x1="8" y1="21" x2="16" y2="21"/>
-          <line x1="12" y1="17" x2="12" y2="21"/>
+          <polyline points="16,18 22,12 16,6"/>
+          <polyline points="8,6 2,12 8,18"/>
+        </svg>
+      ),
+      title: 'Backend Engineering',
+      description: 'Developing scalable REST APIs, microservices, and distributed systems with Python, Go, and modern frameworks.'
+    },
+    {
+      icon: (
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
         </svg>
       ),
       title: 'Security-First Architecture',
@@ -61,33 +62,23 @@ const About = () => {
             </div>
             <div className="about-description">
               <p>
-                I'm a passionate DevOps & Cloud Engineer with expertise in infrastructure automation, 
-                container orchestration, and CI/CD pipelines. My journey has taken me through various 
-                domains, from cybersecurity platforms to cloud-native infrastructure, always with a 
-                focus on scalability, reliability, and security-first architectures.
+                I am a passionate <strong>Engineer</strong> focused on building resilient and high-performing 
+                technology solutions from code to cloud. My experience spans core <strong>Software Engineering</strong>, 
+                where I've developed sophisticated backend and distributed systems including data ingestion pipelines 
+                with <strong>Apache Airflow</strong> and message queues like <strong>RabbitMQ</strong>and deep 
+                expertise in <strong>DevOps and Cloud Engineering</strong>.
               </p>
               <p>
-                With experience at OS Websolutions B.V. and ThreatsEye, I specialize in deploying 
-                Kubernetes clusters, automating infrastructure with Terraform, and implementing 
-                GitOps workflows. I've built production-grade systems handling millions of records 
-                with Apache Airflow and RabbitMQ, while maintaining high availability through 
-                comprehensive monitoring and alerting.
+                I specialize in modern infrastructure practices: deploying, managing, and scaling production 
+                systems on <strong>AWS</strong> using <strong>Kubernetes</strong>, automating infrastructure 
+                with <strong>Terraform</strong>, and ensuring continuous deployment via <strong>GitOps</strong> workflows 
+                (FluxCD). My goal is always to deliver systems that are scalable, reliable, and observable.
               </p>
               <p>
-                Beyond my professional work, I maintain a self-hosted Homelab with Proxmox, Kubernetes, 
-                and FluxCD, where I experiment with cutting-edge DevOps tools and practices. I believe 
-                in continuous learning, automation, and building resilient systems that stand the test 
-                of time.
+                Beyond professional roles at companies like OS Websolutions B.V. and ThreatsEye, I maintain 
+                a self-hosted <strong>Homelab</strong> where I actively master and experiment with advanced 
+                cloud-native tools, reinforcing my commitment to operational excellence and continuous learning.
               </p>
-            </div>
-
-            <div className="about-stats">
-              {stats.map((stat, index) => (
-                <div key={index} className="stat-item">
-                  <div className="stat-number">{stat.number}</div>
-                  <div className="stat-label">{stat.label}</div>
-                </div>
-              ))}
             </div>
           </div>
 

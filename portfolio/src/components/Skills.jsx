@@ -28,14 +28,14 @@ const Skills = () => {
       ),
       skills: portfolioData.skills.backendDevelopment
     },
-    cloudPlatforms: {
-      title: 'Cloud Platforms',
+    devOpsCloud: {
+      title: 'DevOps & Cloud',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
           <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
         </svg>
       ),
-      skills: portfolioData.skills.cloudPlatforms
+      skills: portfolioData.skills.devOpsCloud
     },
     dataProcessing: {
       title: 'Data Processing',
