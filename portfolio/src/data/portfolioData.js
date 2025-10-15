@@ -147,7 +147,7 @@ export const portfolioData = {
       { name: "Docker", level: "Advanced" },
       { name: "Proxmox", level: "Advanced" },
       { name: "Terraform", level: "Advanced" },
-      { name: "Ansible", level: "Intermediate" },
+      { name: "Ansible", level: "Advanced" },
       { name: "GitOps (FluxCD)", level: "Advanced" },
       { name: "CI/CD", level: "Advanced" },
       { name: "AWS", level: "Advanced" },
