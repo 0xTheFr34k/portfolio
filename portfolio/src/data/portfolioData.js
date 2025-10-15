@@ -4,17 +4,18 @@ export const portfolioData = {
   personal: {
     name: "Yassine Taya",
     email: "y.taya.sec@gmail.com",
+    phone: "+212702955821",
     location: "Morocco",
     birthDate: "28 Feb 2001",
     linkedin: "https://www.linkedin.com/in/yassinetaya/",
     github: "https://github.com/0xthefr34k",
     fiverr: "https://www.fiverr.com/ytaya_42",
-    title: "Software Engineer",
-    tagline: "Building scalable backend systems and solving complex technical problems"
+    title: "DevOps & Cloud Engineer",
+    tagline: "Infrastructure automation, container orchestration, and scalable cloud solutions"
   },
 
   // Professional Summary
-  summary: `Software Engineer passionate about building scalable backend systems, designing clean architectures, and solving complex technical problems. Strong experience in developing cloud-based services, distributed systems, and automation pipelines. Skilled in multiple programming languages and software design patterns. Passionate about building robust, high-performance software solutions in fast-paced engineering teams.`,
+  summary: `DevOps & Cloud Engineer with expertise in infrastructure automation, container orchestration, and CI/CD. Strong background in backend engineering, distributed systems, and observability. Experienced in deploying Kubernetes, Docker, Terraform, and GitOps pipelines for production-grade environments. Passionate about scalability, reliability, and security-first architectures.`,
 
   // Work Experience
   experience: [
@@ -22,16 +23,16 @@ export const portfolioData = {
       id: 1,
       company: "OS Websolutions B.V.",
       position: "Software Engineer",
-      duration: "Mar 2025 – present",
+      duration: "Mar 2025 – Sep 2025",
       location: "Netherlands / Remote",
       type: "Full-time",
       achievements: [
-        "Developing scalable backend services for web platforms",
-        "Implemented microservices using RESTful APIs and message queues",
-        "Leveraged AWS and Docker to ensure system scalability and high availability",
-        "Collaborated closely with cross-functional teams to design and deliver new product features"
+        "Designed and deployed microservices on AWS using Docker & Kubernetes, ensuring high availability and scalability",
+        "Automated CI/CD pipelines to accelerate deployments and reduce errors",
+        "Improved infrastructure reliability through monitoring & alerting (Prometheus, ELK, Uptime Kuma)",
+        "Collaborated with cross-functional teams to deliver secure and resilient features"
       ],
-      technologies: ["AWS", "Docker", "Microservices", "RESTful APIs", "Message Queues"]
+      technologies: ["AWS", "Docker", "Kubernetes", "CI/CD", "Prometheus", "ELK", "Uptime Kuma"]
     },
     {
       id: 2,
@@ -41,13 +42,12 @@ export const portfolioData = {
       location: "Morocco",
       type: "Full-time",
       achievements: [
-        "Designed and implemented data processing pipelines using Apache Airflow",
-        "Built distributed services with RabbitMQ for inter-service communication",
-        "Enhanced system observability and error handling, improving system stability",
-        "Developed automated alerting tools to proactively detect system issues",
-        "Contributed to backend API design and code optimization for better performance"
+        "Built data ingestion pipelines with Apache Airflow handling millions of records",
+        "Implemented RabbitMQ-based distributed processing for asynchronous workloads",
+        "Enhanced system observability with ELK + automated alerts, reducing downtime",
+        "Optimized backend APIs, improving response times by 30%"
       ],
-      technologies: ["Apache Airflow", "RabbitMQ", "Python", "Backend APIs", "System Monitoring"]
+      technologies: ["Apache Airflow", "RabbitMQ", "Python", "ELK Stack", "Backend APIs"]
     },
     {
       id: 3,
@@ -57,12 +57,11 @@ export const portfolioData = {
       location: "Remote",
       type: "Freelance",
       achievements: [
-        "Delivered data extraction solutions using web scraping (Python, Puppeteer)",
-        "Developed customized scraping tools for client-specific business needs",
-        "Focused on code quality, data accuracy, and performance optimization",
-        "Developed scraping bots with Python and Puppeteer for high-demand use cases"
+        "Delivered Python + Puppeteer automation scripts for data collection and client workflows",
+        "Built custom scraping & monitoring solutions with focus on speed and maintainability",
+        "Helped clients reduce manual workload by 60% through automation"
       ],
-      technologies: ["Python", "Puppeteer", "Web Scraping", "Data Extraction", "JavaScript"]
+      technologies: ["Python", "Puppeteer", "Web Scraping", "Automation", "JavaScript"]
     }
   ],
 
@@ -70,6 +69,22 @@ export const portfolioData = {
   projects: [
     {
       id: 1,
+      name: "Homelab",
+      description: "Cloud-Native Infrastructure",
+      role: "Infrastructure Engineer",
+      achievements: [
+        "Designed a self-hosted cloud lab with Proxmox, Kubernetes, and Terraform",
+        "Deployed GitOps workflows with FluxCD for automated cluster management",
+        "Configured Longhorn for distributed storage, and MinIO for S3-compatible object storage",
+        "Integrated Uptime Kuma for monitoring & observability",
+        "Set up Traefik as Ingress controller for routing and SSL termination"
+      ],
+      technologies: ["Proxmox", "Kubernetes", "Terraform", "FluxCD", "Longhorn", "MinIO", "Traefik", "GitOps"],
+      type: "Personal",
+      link: "https://github.com/0xTheFr34k/Homelab"
+    },
+    {
+      id: 2,
       name: "Orova.ai",
       description: "AI-Powered Compliance Platform",
       role: "Backend Developer",
@@ -79,10 +94,11 @@ export const portfolioData = {
         "Helped scale the microservice architecture for better performance and maintainability"
       ],
       technologies: ["Microservices", "Cloud Deployment", "Authentication", "Backend Development"],
-      type: "Professional"
+      type: "Professional",
+      link: "https://orova.ai"
     },
     {
-      id: 2,
+      id: 3,
       name: "ThreatsEye.io",
       description: "Cloud-Based Threat Detection Platform",
       role: "Core Developer",
@@ -92,20 +108,21 @@ export const portfolioData = {
         "Focused on system reliability, security automation, and proactive alerting mechanisms"
       ],
       technologies: ["Apache Airflow", "RabbitMQ", "Real-time Analysis", "Security Automation"],
-      type: "Professional"
+      type: "Professional",
+      link: "https://threatseye.io"
     },
     {
-      id: 3,
+      id: 4,
       name: "Jotiq.ai",
-      description: "AI Recruitment Assistant (MVP)",
+      description: "AI Recruitment Assistant",
       role: "Backend Developer",
       achievements: [
-        "Built backend services for data ingestion and analysis",
-        "Implemented matching logic for candidate-job fit based on AI scoring",
+        "Implemented AI-driven candidate-job matching logic",
         "Used Node.js, TypeScript, and MongoDB for API and data flow development"
       ],
       technologies: ["Node.js", "TypeScript", "MongoDB", "AI Integration", "API Development"],
-      type: "MVP"
+      type: "Professional",
+      link: "https://jotiq.ai"
     }
   ],
 
@@ -125,21 +142,26 @@ export const portfolioData = {
       { name: "Microservices", level: "Advanced" },
       { name: "Distributed Systems", level: "Advanced" }
     ],
-    cloudPlatforms: [
-      { name: "AWS", level: "Advanced" },
+    devOpsCloud: [
+      { name: "Kubernetes", level: "Advanced" },
       { name: "Docker", level: "Advanced" },
-      { name: "Kubernetes", level: "Intermediate" }
+      { name: "Proxmox", level: "Advanced" },
+      { name: "Terraform", level: "Advanced" },
+      { name: "Ansible", level: "Intermediate" },
+      { name: "GitOps (FluxCD)", level: "Advanced" },
+      { name: "CI/CD", level: "Advanced" },
+      { name: "AWS", level: "Advanced" }
     ],
     dataProcessing: [
       { name: "Apache Airflow", level: "Advanced" },
       { name: "RabbitMQ", level: "Advanced" }
     ],
     monitoringSecurity: [
-      { name: "ELK Stack", level: "Intermediate" },
-      { name: "Prometheus", level: "Intermediate" },
+      { name: "ELK Stack", level: "Advanced" },
+      { name: "Prometheus", level: "Advanced" },
+      { name: "Suricata", level: "Intermediate" },
       { name: "IDS", level: "Intermediate" },
-      { name: "SIEM", level: "Intermediate" },
-      { name: "Suricata", level: "Intermediate" }
+      { name: "SIEM", level: "Intermediate" }
     ]
   },
 
@@ -149,10 +171,10 @@ export const portfolioData = {
       id: 1,
       institution: "1337 - 42 Network - UM6P",
       degree: "Software Engineering",
-      duration: "2021 – present",
+      duration: "2021 – 2025",
       location: "Ben Guerir, Morocco",
       type: "University",
-      status: "In Progress"
+      status: "Completed"
     },
     {
       id: 2,
@@ -195,103 +217,6 @@ export const portfolioData = {
       description: "Solved advanced security challenges, enhancing skills in secure software design and system hardening",
       year: "2023",
       type: "Security Achievement"
-    }
-  ],
-
-  // Client Testimonials
-  testimonials: [
-    {
-      id: 1,
-      clientName: "soowarez",
-      clientCountry: "France",
-      clientFlag: "🇫🇷",
-      rating: 5,
-      reviewDate: "2 years ago",
-      projectCategory: "Script Development",
-      reviewText: "Ultra rapide à faire, avant de passer par ytaya_42 j'ai demander a 2 autre personne sur fiverr mais il n'étais pas capable de faire mon script. Seul ytaya_42 a réussi a leur faire. Le code est facile a lire, travail correct, réponds rapidement. Merci beaucoup",
-      projectDetails: "Custom automation script development",
-      helpful: { yes: 0, no: 0 },
-      verified: true
-    },
-    {
-      id: 2,
-      clientName: "dreamer002418",
-      clientCountry: "Philippines",
-      clientFlag: "🇵🇭",
-      rating: 5,
-      reviewDate: "2 years ago",
-      projectCategory: "Web Automation",
-      reviewText: "Yassine is an amazing developer, I asked him for something that seems impossible but yet he delivered it perfectly and according to what I needed. He is very diligent and works extremely hard. I gave him a deadline and was able to deliver it without delay. If you're looking for an amazing developer that can do puppeteer or anything that you need that fits his services, I can guarantee that he will deliver it to the best of his ability. This guy will reach the top soon, better work with him now or you'll regret it. Extremely satisfied with everything.",
-      projectDetails: "Complex web automation with Puppeteer",
-      helpful: { yes: 0, no: 0 },
-      verified: true
-    },
-    {
-      id: 3,
-      clientName: "priuslanehogger",
-      clientCountry: "United States",
-      clientFlag: "🇺🇸",
-      rating: 5,
-      reviewDate: "2 years ago",
-      projectCategory: "Development",
-      reviewText: "Very fast, thank you!",
-      projectDetails: "Quick development task",
-      helpful: { yes: 0, no: 0 },
-      verified: true
-    },
-    {
-      id: 4,
-      clientName: "fortunevieyr4",
-      clientCountry: "United States",
-      clientFlag: "🇺🇸",
-      rating: 5,
-      reviewDate: "2 years ago",
-      projectCategory: "Development",
-      reviewText: "Amazing job!",
-      projectDetails: "Custom development project",
-      helpful: { yes: 0, no: 0 },
-      verified: true,
-      isRepeatClient: true
-    },
-    {
-      id: 5,
-      clientName: "chinmay_15",
-      clientCountry: "India",
-      clientFlag: "🇮🇳",
-      rating: 5,
-      reviewDate: "2 years ago",
-      projectCategory: "Development",
-      reviewText: "Great work",
-      projectDetails: "Development project",
-      helpful: { yes: 0, no: 0 },
-      verified: true
-    },
-    {
-      id: 6,
-      clientName: "fortunevieyr4",
-      clientCountry: "United States",
-      clientFlag: "🇺🇸",
-      rating: 5,
-      reviewDate: "2 years ago",
-      projectCategory: "Development",
-      reviewText: "Amazing job my friend, thanks!",
-      projectDetails: "Follow-up development project",
-      helpful: { yes: 0, no: 0 },
-      verified: true,
-      isRepeatClient: true
-    },
-    {
-      id: 7,
-      clientName: "sb5_sb5",
-      clientCountry: "United Kingdom",
-      clientFlag: "🇬🇧",
-      rating: 5,
-      reviewDate: "2 years ago",
-      projectCategory: "Development",
-      reviewText: "Superb communication and a great delivery. Very happy thank you.",
-      projectDetails: "Custom development solution",
-      helpful: { yes: 0, no: 0 },
-      verified: true
     }
   ],
 

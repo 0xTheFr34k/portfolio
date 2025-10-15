@@ -20,8 +20,8 @@ const About = () => {
           <path d="M2 12l10 5 10-5"/>
         </svg>
       ),
-      title: 'Backend Architecture',
-      description: 'Designing scalable microservices and distributed systems with modern cloud technologies.'
+      title: 'Infrastructure Automation',
+      description: 'Building cloud-native infrastructure with Kubernetes, Terraform, and GitOps for production-grade environments.'
     },
     {
       icon: (
@@ -30,8 +30,8 @@ const About = () => {
           <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1 1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
         </svg>
       ),
-      title: 'DevOps & Automation',
-      description: 'Implementing CI/CD pipelines, containerization, and infrastructure automation for efficient deployments.'
+      title: 'CI/CD & DevOps',
+      description: 'Automating deployment pipelines, container orchestration, and ensuring high availability with monitoring.'
     },
     {
       icon: (
@@ -41,8 +41,8 @@ const About = () => {
           <line x1="12" y1="17" x2="12" y2="21"/>
         </svg>
       ),
-      title: 'Problem Solving',
-      description: 'Analyzing complex technical challenges and delivering innovative solutions with clean, maintainable code.'
+      title: 'Security-First Architecture',
+      description: 'Designing resilient systems with security best practices, observability, and proactive monitoring.'
     }
   ];
 
@@ -61,20 +61,23 @@ const About = () => {
             </div>
             <div className="about-description">
               <p>
-                I'm a passionate Software Engineer with over 4 years of experience in building 
-                scalable backend systems and cloud-based solutions. My journey in software 
-                development has taken me through various domains, from cybersecurity platforms 
-                to AI-powered applications.
+                I'm a passionate DevOps & Cloud Engineer with expertise in infrastructure automation, 
+                container orchestration, and CI/CD pipelines. My journey has taken me through various 
+                domains, from cybersecurity platforms to cloud-native infrastructure, always with a 
+                focus on scalability, reliability, and security-first architectures.
               </p>
               <p>
-                Currently working at OS Websolutions B.V. in the Netherlands, I specialize in 
-                developing microservices architectures, implementing data processing pipelines, 
-                and ensuring high system availability through modern DevOps practices.
+                With experience at OS Websolutions B.V. and ThreatsEye, I specialize in deploying 
+                Kubernetes clusters, automating infrastructure with Terraform, and implementing 
+                GitOps workflows. I've built production-grade systems handling millions of records 
+                with Apache Airflow and RabbitMQ, while maintaining high availability through 
+                comprehensive monitoring and alerting.
               </p>
               <p>
-                When I'm not coding, you'll find me exploring new technologies, contributing to 
-                open-source projects, or solving security challenges on platforms like HackTheBox. 
-                I believe in continuous learning and staying updated with the latest industry trends.
+                Beyond my professional work, I maintain a self-hosted Homelab with Proxmox, Kubernetes, 
+                and FluxCD, where I experiment with cutting-edge DevOps tools and practices. I believe 
+                in continuous learning, automation, and building resilient systems that stand the test 
+                of time.
               </p>
             </div>
 

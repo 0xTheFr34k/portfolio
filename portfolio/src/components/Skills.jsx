@@ -188,32 +188,6 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        
-        <div className="skills-summary">
-          <div className="summary-card">
-            <h3>Technical Expertise</h3>
-            <p>
-              With over 4 years of experience in software development, I have built 
-              expertise across multiple technology stacks. My focus is on backend 
-              development, cloud architecture, and building scalable systems that 
-              can handle high-traffic applications.
-            </p>
-            <div className="expertise-highlights">
-              <div className="highlight">
-                <span className="highlight-number">7+</span>
-                <span className="highlight-text">Programming Languages</span>
-              </div>
-              <div className="highlight">
-                <span className="highlight-number">15+</span>
-                <span className="highlight-text">Technologies & Tools</span>
-              </div>
-              <div className="highlight">
-                <span className="highlight-number">3</span>
-                <span className="highlight-text">Cloud Platforms</span>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

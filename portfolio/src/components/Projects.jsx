@@ -5,14 +5,21 @@ import './Projects.css';
 const Projects = () => {
   const [filter, setFilter] = useState('All');
   
-  const projectTypes = ['All', 'Professional', 'MVP'];
+  const projectTypes = ['All', 'Professional', 'Personal'];
   
   const filteredProjects = filter === 'All' 
     ? portfolioData.projects 
     : portfolioData.projects.filter(project => project.type === filter);
 
   const getProjectIcon = (projectName) => {
-    if (projectName.includes('AI') || projectName.includes('Jotiq')) {
+    if (projectName.includes('Homelab')) {
+      return (
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+          <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+        </svg>
+      );
+    } else if (projectName.includes('AI') || projectName.includes('Jotiq')) {
       return (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
           <path d="M9 12l2 2 4-4"/>
@@ -106,12 +113,19 @@ const Projects = () => {
               </div>
               
               <div className="project-footer">
-                <button className="project-btn">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M7 17L17 7M17 7H7M17 7V17"/>
-                  </svg>
-                  Learn More
-                </button>
+                {project.link && (
+                  <a 
+                    href={project.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="project-btn"
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                    </svg>
+                    Learn More
+                  </a>
+                )}
               </div>
             </div>
           ))}
